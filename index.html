@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>Game</title>
+   <style>
+      body{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+      } 
+    #wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header" "canvas" "buttons";
+    place-content: center;
+}
+#grid-container{
+   grid-area: canvas;
+    height: 40vw;
+    width: 40vw;
+    justify-self: center;
+    border: 4 px solid black;
+}
+
+</style>
+</head>
+  <body>
+<div id="wrapper">
+ <div id="grid-container">
+  <div id="grid-item"  > </div> 
+</div>
+<div id="buttons">
+ <button id="clear">Clear Grid</button>
+    <button id="new">New Grid</button>
+<select id="select">
+  <option>Black</option>
+  <option>Color</option>
+</select>
+  </div></div>
+      <script type="text/javascript" src="b.js"></script>
+   </body>
+</html>
+    
